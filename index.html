@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/1c36f4658d.js" crossorigin="anonymous">
+   </script>
+   <title>Captcha in JavaScript - BEEB</title>
+</head>
+
+<body>
+   <div class="container">
+      
+      <h2>Captcha in Javascript</h2>
+      
+      <div class="wrapper">
+         
+         <div class="img-reload">
+            <img src="images/background.jpg" alt="">
+            <span class="captcha"></span>
+            <span class="reload load"><i class="fa-solid fa-redo-alt reload"></i></span>
+         </div>
+         
+         <form class="input-check">
+            <input placeholder="Enter captcha" type="text" maxlength="6" required>
+            
+            <button id="btn">Check</button>
+         </form>
+         
+         <p id="status"></p>
+         
+      </div>
+      
+   </div>
+<script src="main.js"></script>
+</body>
+
+</html>

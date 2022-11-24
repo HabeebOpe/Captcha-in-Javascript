@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'PT Sans', sans-serif;
+   background: linear-gradient(#FFCA32, #878DC4);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 100vh;
+}
+.container{
+   width: 400px;
+   padding: 5px;
+}
+.container h2{
+   padding: 10px;
+   text-align: center;
+   color: #fff;
+}
+.wrapper{
+   padding: 10px;
+   width: 100%;
+   height: auto;
+   border-radius: 5px;
+   background-color: #fff;
+   margin-top: 20px;
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5)
+}
+.wrapper .img-reload{
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   width: 100%;
+   margin: 10px 0;
+}
+.img-reload img{
+   width: 80%;
+   height: 50px;
+}
+.img-reload .load {
+   width: 50px;
+   height: 50px;
+   background-color: #E2B125;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.load i{
+   font-size: 25px;
+   color: #fff;
+   transition: 0.5s;
+}
+.rot{
+   transform: rotate(300deg)
+}
+.img-reload .captcha{
+   position: absolute;
+   text-align: center;
+   font-size: 25px;
+   width: 85%;
+   letter-spacing: 15px;
+   line-height: 50px;
+   color: #C6B074;
+}
+form{
+   display: flex;
+   align-items: center;
+   margin-top: 5px;
+   position: relative;
+}
+form input{
+   width: 100%;
+   padding: 5px;
+   height: 45px;
+   border-radius: 5px;
+   border: 1px solid #CDCCCA;
+   font-size: 18px;
+   outline: none;
+}
+input:focus{
+   border: 2px solid #B55CFF;
+}
+form button{
+   position: absolute;
+   right: 5px;
+   width: 60px;
+   height: 35px;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   color: #fff;
+   background-color: #B55CFF;
+   display: none;
+   transition: 0.3s ease-in;
+}
+input:valid ~ button{
+   display: block;
+}
+.wrapper p{
+   display: none;
+   text-align: center;
+   margin: 10px 0;
+   font-size: 16px;
+   transition: 0.3s ease;
+}
